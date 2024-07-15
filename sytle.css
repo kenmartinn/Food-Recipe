@@ -1,0 +1,121 @@
+@font-face{
+    font-family: nexa;
+    src: url(Nexa-Heavy.ttf);
+}
+@font-face{
+    font-family: SemiBold;
+    src: url(Railway-Semibold.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+    
+.navbar-brand{
+    font-family: nexa;
+    font-size: 30px;
+    color: #000000;
+    font-weight: bold;
+}
+.nav-item{
+    font-family: SemiBold;
+    font-size: 18px;
+    color: #000000;
+}
+.nav-item :hover{
+    transform: scale(1.3);
+    pointer: cursor;
+}
+
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+    transform: translateY(100px);
+}
+.blog-box{
+    width: 350px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    margin: 20px;
+}
+
+
+.blog-img{
+    width: 100%;
+    height: auto;
+}
+.blog-img img{
+    width: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: cover;
+}
+.blog-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.blog-text span{
+    font-size: 15px;
+    color: black;
+    font-family: SemiBold;
+}
+.blog-text .blog-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    font-family: myFont;
+    text-decoration: none;
+
+}
+.blog-text .blog-title:hover{
+    color: red;
+    transition: all ease;
+}
+.blog-text p{
+    color: rgb(78, 78, 78);
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 5px 0px;
+}
+
+
+
+/* code for smooth zoom in */
+.blog-box:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px 0 rgba(56, 55, 55, 0.911);
+}
+
+
+/* code for smooth zoom out */
+.blog-box:not(:hover){
+
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: rgba(0, 0, 0, 0.378);
+    transform: scale(1);
+}
+footer {
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+}
+.blog-container {
+    margin-bottom: 200px;
+}
+
